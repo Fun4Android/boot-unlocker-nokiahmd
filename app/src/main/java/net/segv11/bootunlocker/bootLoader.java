@@ -1,5 +1,5 @@
 /******************************************************************************
- * Copyright 2015 James Mason                                                 *
+ * Copyright 2018 Calyx Hikari                                                *
  *                                                                            *
  *   Licensed under the Apache License, Version 2.0 (the "License");          *
  *   you may not use this file except in compliance with the License.         *
@@ -51,36 +51,14 @@ public class bootLoader {
      */
     public static bootLoader makeBootLoader() {
         Log.v(TAG, "DEVICE = " + android.os.Build.DEVICE);
-        if (android.os.Build.DEVICE.equals("maguro")) {
-            return new bootLoader_Gnex();
-        } else if (android.os.Build.DEVICE.equals("toro")) {
-            return new bootLoader_Gnex();
-        } else if (android.os.Build.DEVICE.equals("toroplus")) {
-            return new bootLoader_Gnex();
-        } else if (android.os.Build.DEVICE.equals("manta")) {
-            return new bootLoader_N10();
-        } else if (android.os.Build.DEVICE.equals("mako")) {
-            return new bootLoader_N4();
-        } else if (android.os.Build.DEVICE.equals("hammerhead")) {
-            return new bootLoader_N5();
-        } else if (android.os.Build.DEVICE.equals("flo")) {
-            return new bootLoader_N7_2013();
-        } else if (android.os.Build.DEVICE.equals("deb")) {
-            return new bootLoader_N7_2013();
-        } else if (android.os.Build.DEVICE.equals("bacon")) {
-            return new bootLoader_OnePlusOne();
-        } else if (android.os.Build.DEVICE.equals("A0001")) {
-            return new bootLoader_OnePlusOne();
-        } else if (android.os.Build.DEVICE.equals("OnePlus2")) {
-            return new bootLoader_OnePlus2();
-        } else if (android.os.Build.DEVICE.equals("OnePlus")) {
-            return new bootLoader_OnePlusX();
-        } else if (android.os.Build.DEVICE.equals("ONE")) {
-            return new bootLoader_OnePlusX();
-        } else if (android.os.Build.DEVICE.equals("E1001")) {
-            return new bootLoader_OnePlusX();
-        } else if (android.os.Build.DEVICE.equals("yotaphone2")) {
-            return new bootLoader_YotaPhone2();
+        if (android.os.Build.DEVICE.equals("D1C")) {
+            return new bootLoader_nokia6();
+        } else if (android.os.Build.DEVICE.equals("PLE")) {
+            return new bootLoader_nokia6();
+        } else if (android.os.Build.DEVICE.equals("D1A")) {
+            return new bootLoader_nokia5();
+        } else if (android.os.Build.DEVICE.equals("ND1")) {
+            return new bootLoader_nokia5();
         } else {
             return null;
         }
