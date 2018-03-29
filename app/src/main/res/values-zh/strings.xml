@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HMD 解锁提权工具</string>
+    <string name="welcome_text">HMD 解锁提权工具允许你获得 Bootloader 解锁能力。</string>
+    <string name="tamper_text">只要获取了 ROOT 权限，你就能使用它来获得解锁权限。</string>
+    <string name="root_required">你 <b>需要</b> ROOT 权限来使用此工具。</string>
+    <string name="verb_lock">降权</string>
+    <string name="verb_unlock">提权</string>
+    <string name="bootloader_status">是否能解锁:</string>
+    <string name="stat_locked">是</string>
+    <string name="stat_unlocked">否</string>
+    <string name="stat_no_root">还没 Root</string>
+    <string name="stat_unknown_device">不支持</string>
+    <string name="stat_tampered">Tampered</string>
+    <string name="stat_not_tampered">Untampered</string>
+    <string name="waiting_for_root">等待获取 Root 权限</string>
+    <string name="extra_unknown_device">这个机器 “%1$s"” 还不受支持呢</string>
+    <string name="version">App Version:</string>
+    <string name="device">Device: </string>
+    <string name="bootloader">Bootloader: </string>
+    <string name="tamper_flag">Tamper Flag:</string>
+    <string name="verb_clear_tamper">Untamper</string>
+    <string name="verb_set_tamper">Tamper</string>
+    <string name="unknown">Unknown</string>
+
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="about_text">Hello world!  This is the text for the About Screen.</string>
+    <string name="action_about">About HMD Capability Acquirer</string>
+
+
+</resources>
