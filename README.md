@@ -1,6 +1,6 @@
 # HMD Nokia Android Bootloader Unlocker
 
-## BootUnlocker for HMD Nokia Devices -- Get capability of unlocking bootoader
+## BootUnlocker for HMD Nokia Devices -- Get capability of unlocking bootloader
 This application REQUIRES a rooted Nokia 5 (Codename ND1 or D1A) or rooted Nokia 6 (Codename D1C or PLE), while the Nokia 6 (Codename PL2) isn't supported yet.
 
 Since you're able to root Nokia 5 and 6 without unlocking bootloader with specific tricks, you may need to consider how to acquire unlock permission now.
@@ -12,9 +12,7 @@ To Unlock your phone, you need to acquire root permission before proceed. Then u
 
 ## License
 
-BootUnlocker for Nexus Devices is Open Source Software, licensed under the Apache License, Version 2.0. You can redistribute, reuse, or modify this software as permitted under this license.
-
-Source code is available on Google Code, along current and previous versions of the complied application.
+HMD Nokia Android Bootloader Unlocker is Open Source Software, licensed under the Apache License, Version 2.0. You can redistribute, reuse, or modify this software as permitted under this license.
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
