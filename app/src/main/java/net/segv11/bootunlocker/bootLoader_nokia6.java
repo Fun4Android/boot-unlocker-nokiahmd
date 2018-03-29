@@ -1,5 +1,5 @@
 /******************************************************************************
- * Copyright 2015 James Mason                                                 *
+ * Copyright 2018 Calyx Hikari                                                *
  *                                                                            *
  *   Licensed under the Apache License, Version 2.0 (the "License");          *
  *   you may not use this file except in compliance with the License.         *
@@ -24,19 +24,19 @@ import java.io.IOException;
 /**
  * @description device-specific bootloader code for Nexus 10 tablets
  */
-public class bootLoader_N10 extends bootLoader {
+public class bootLoader_nokia6 extends bootLoader {
     /**
      * For logging
      */
-    private static final String TAG = "net.segv11.bootLoader_N10";
+    private static final String TAG = "net.segv11.bootLoader_nokia6";
 
     /**
      * Private constants for working with the lock state in the param partition
      */
     private static final String queryCommand =
-            "dd ibs=1 count=1 skip=548 if=/dev/block/platform/dw_mmc.0/by-name/param  # query ";
+            "dd ibs=1 count=1 skip=12545 if=/dev/block/bootdevice/by-name/deviceinfo  # query ";
     private static final String writeCommand =
-            "dd obs=1 count=1 seek=548 of=/dev/block/platform/dw_mmc.0/by-name/param # write ";
+            "dd obs=1 count=1 seek=12545 of=/dev/block/bootdevice/by-name/deviceinfo # write ";
 
     /**
      * Locks or unlocks the bootloader
@@ -46,10 +46,10 @@ public class bootLoader_N10 extends bootLoader {
         int outByte;
         if (newState) {
             outByte = 0;
-            Log.i(TAG, "Locking bootloader by sending " + outByte + " to " + writeCommand);
+            Log.i(TAG, "Deacquiring Unlock Capability by sending " + outByte + " to " + writeCommand);
         } else {
-            outByte = 1;
-            Log.i(TAG, "Unlocking bootloader by sending " + outByte + " to " + writeCommand);
+            outByte = 255;
+            Log.i(TAG, "Acquiring Unlock Capability by sending " + outByte + " to " + writeCommand);
         }
 
         superUserCommandWithDataByte(writeCommand, outByte);
@@ -69,10 +69,8 @@ public class bootLoader_N10 extends bootLoader {
             Log.v(TAG, "Got lock value " + lockResult);
             if (lockResult == 0) {
                 return BL_LOCKED;
-            } else if (lockResult == 1) {
-                return BL_UNLOCKED;
             } else {
-                return BL_UNKNOWN;
+                return BL_UNLOCKED;
             }
         } catch (IOException e) {
             Log.v(TAG, "Caught IOException while querying: " + e);
