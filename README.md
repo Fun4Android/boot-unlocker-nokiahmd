@@ -1,7 +1,9 @@
-# Android Bootloader Unlocker
+# HMD Nokia Android Bootloader Unlocker
 
-## BootUnlocker for Nexus Devices -- Unlock your bootloader without fastboot.
-This application REQUIRES a Galaxy Nexus (maguro, toro or toroplus), Nexus 4 (mako), Nexus 5 (hammerhead), Nexus 7 2013 (deb or flo), Nexus 10 (manta), or OnePlus One (bacon / A0001), with root.
+## BootUnlocker for HMD Nokia Devices -- Get capability of unlocking bootoader
+This application REQUIRES a rooted Nokia 5 (Codename ND1 or D1A) or rooted Nokia 6 (Codename D1C or PLE), while the Nokia 6 (Codename PL2) isn't supported yet.
+
+Following info comes from original repo and haven't been modified yet.
 
 You've rooted your device, and you are trying to decide between the security of relocking your bootloader (with stock recovery and USB Debugging off), and the flexibility of leaving it unlocked.
 You know that in order to prevent an unauthorized user from accessing your data by flashing a custom recovery, fastboot oem unlock wipes your data. This also means that if you relock your bootloader, you will need to do a full backup-and-restore whenever you decide to unlock it again.
