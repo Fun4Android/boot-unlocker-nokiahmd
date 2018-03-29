@@ -3,11 +3,11 @@
 ## BootUnlocker for HMD Nokia Devices -- Get capability of unlocking bootoader
 This application REQUIRES a rooted Nokia 5 (Codename ND1 or D1A) or rooted Nokia 6 (Codename D1C or PLE), while the Nokia 6 (Codename PL2) isn't supported yet.
 
-Following info comes from original repo and haven't been modified yet.
+Since you're able to root Nokia 5 and 6 without unlocking bootloader with specific tricks, you may need to consider how to acquire unlock permission now.
 
-You've rooted your device, and you are trying to decide between the security of relocking your bootloader (with stock recovery and USB Debugging off), and the flexibility of leaving it unlocked.
-You know that in order to prevent an unauthorized user from accessing your data by flashing a custom recovery, fastboot oem unlock wipes your data. This also means that if you relock your bootloader, you will need to do a full backup-and-restore whenever you decide to unlock it again.
-BootUnlocker for Nexus Devices lets you have the best of both worlds by using root privileges to unlock your bootloader from within Android, without wiping your data. This allows you to keep your bootloader locked for security, with this application safely protected behind your lockscreen password. Whenever you want to unlock or relock your bootloader, just unlock your screen and run BootUnlocker.
+As you know, HMD Global has negative attitude on bootloader unlock, then we will unlock the phone by ourselves. Evenwell, a department of software development in FIH is not serious on making software.
+
+To Unlock your phone, you need to acquire root permission before proceed. Then use this tool to acquire unlock permission. After that, try fastboot oem unlock-go command.
 
 
 ## License
@@ -19,13 +19,11 @@ Source code is available on Google Code, along current and previous versions of 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
 ## Links
- - Learn how BootUnlocker for Nexus Devices works: [HowItWorks](HowItWorks.md)
- - XDA Developers: http://bit.ly/BootUnlocker
+ - Learn how BootUnlocker for Nokia 5/6 works: [HowItWorks](HowItWorks.md)
+ - XDA Developers: Coming Soon
 
 ## Downloads
- - Download application from Google Play: http://play.google.com/store/apps/details?id=net.segv11.bootunlocker
- - Download application from Google Drive: https://drive.google.com/folderview?id=0B6qHcVHPO4VrbVZBX1oyT0FCX00&usp=sharing#list
+ - Download application: Coming Soon
 
 ## Support
- - Leave a comment on the [XDA Thread](http://bit.ly/BootUnlocker)
- - Email [support@segv11.net](support@segv11.net)
+ - Email [hikaricalyx@hikaricalyx.com](hikaricalyx@hikaricalyx.com)
